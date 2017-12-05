@@ -1,115 +1,58 @@
-﻿adm0_a3_is,geounit,Indicator Name,Year,Value
-AGO,Angola,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,15.4
-AGO,Angola,"Mortality rate, under-5 (per 1,000 live births)",2016,82.5
-BDI,Burundi,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,20.2
-BDI,Burundi,"Mortality rate, under-5 (per 1,000 live births)",2016,71.7
-BEN,Benin,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,22.4
-BEN,Benin,"Mortality rate, under-5 (per 1,000 live births)",2016,97.6
-BFA,Burkina Faso,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,25.5
-BFA,Burkina Faso,"Mortality rate, under-5 (per 1,000 live births)",2016,84.6
-BWA,Botswana,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,7.8
-BWA,Botswana,"Mortality rate, under-5 (per 1,000 live births)",2016,40.6
-CAF,Central African Republic,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,22.2
-CAF,Central African Republic,"Mortality rate, under-5 (per 1,000 live births)",2016,123.6
-CIV,Ivory Coast,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,27.9
-CIV,Ivory Coast,"Mortality rate, under-5 (per 1,000 live births)",2016,91.8
-CMR,Cameroon,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,29.6
-CMR,Cameroon,"Mortality rate, under-5 (per 1,000 live births)",2016,79.7
-COD,Democratic Republic of the Congo,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,28.2
-COD,Democratic Republic of the Congo,"Mortality rate, under-5 (per 1,000 live births)",2016,94.3
-COG,Republic of Congo,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,11.2
-COG,Republic of Congo,"Mortality rate, under-5 (per 1,000 live births)",2016,54.1
-COM,Comoros,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,6.2
-COM,Comoros,"Mortality rate, under-5 (per 1,000 live births)",2016,73.3
-CPV,Cape Verde,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,2.4
-CPV,Cape Verde,"Mortality rate, under-5 (per 1,000 live births)",2016,21.4
-DJI,Djibouti,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,2
-DJI,Djibouti,"Mortality rate, under-5 (per 1,000 live births)",2016,64.2
-DZA,Algeria,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,4.1
-DZA,Algeria,"Mortality rate, under-5 (per 1,000 live births)",2016,25.2
-EGY,Egypt,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,4.9
-EGY,Egypt,"Mortality rate, under-5 (per 1,000 live births)",2016,22.8
-ERI,Eritrea,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,12.5
-ERI,Eritrea,"Mortality rate, under-5 (per 1,000 live births)",2016,44.5
-ESP,Spain,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,0.8
-ESP,Spain,"Mortality rate, under-5 (per 1,000 live births)",2016,3.3
-ETH,Ethiopia,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,17.4
-ETH,Ethiopia,"Mortality rate, under-5 (per 1,000 live births)",2016,58.4
-GAB,Gabon,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,15.7
-GAB,Gabon,"Mortality rate, under-5 (per 1,000 live births)",2016,47.4
-GHA,Ghana,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,12.6
-GHA,Ghana,"Mortality rate, under-5 (per 1,000 live births)",2016,58.8
-GIN,Guinea,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,22.3
-GIN,Guinea,"Mortality rate, under-5 (per 1,000 live births)",2016,89
-GMB,Gambia,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,12.5
-GMB,Gambia,"Mortality rate, under-5 (per 1,000 live births)",2016,65.3
-GNB,Guinea Bissau,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,17.6
-GNB,Guinea Bissau,"Mortality rate, under-5 (per 1,000 live births)",2016,88.1
-GNQ,Equatorial Guinea,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,16.8
-GNQ,Equatorial Guinea,"Mortality rate, under-5 (per 1,000 live births)",2016,90.9
-KEN,Kenya,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,10.6
-KEN,Kenya,"Mortality rate, under-5 (per 1,000 live births)",2016,49.2
-LBR,Liberia,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,17.3
-LBR,Liberia,"Mortality rate, under-5 (per 1,000 live births)",2016,67.4
-LBY,Libya,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,4.9
-LBY,Libya,"Mortality rate, under-5 (per 1,000 live births)",2016,12.9
-LSO,Lesotho,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,13.8
-LSO,Lesotho,"Mortality rate, under-5 (per 1,000 live births)",2016,93.5
-MAR,Morocco,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,3.4
-MAR,Morocco,"Mortality rate, under-5 (per 1,000 live births)",2016,27.1
-MAR,Western Sahara,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,3.4
-MAR,Western Sahara,"Mortality rate, under-5 (per 1,000 live births)",2016,27.1
-MDG,Madagascar,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,13.4
-MDG,Madagascar,"Mortality rate, under-5 (per 1,000 live births)",2016,46.4
-MLI,Mali,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,23.5
-MLI,Mali,"Mortality rate, under-5 (per 1,000 live births)",2016,110.6
-MOZ,Mozambique,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,15.4
-MOZ,Mozambique,"Mortality rate, under-5 (per 1,000 live births)",2016,71.3
-MRT,Mauritania,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,9.3
-MRT,Mauritania,"Mortality rate, under-5 (per 1,000 live births)",2016,81.4
-MWI,Malawi,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,13.6
-MWI,Malawi,"Mortality rate, under-5 (per 1,000 live births)",2016,55.1
-NAM,Namibia,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,10.6
-NAM,Namibia,"Mortality rate, under-5 (per 1,000 live births)",2016,45.2
-NER,Niger,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,40.3
-NER,Niger,"Mortality rate, under-5 (per 1,000 live births)",2016,91.3
-NGA,Nigeria,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,20.6
-NGA,Nigeria,"Mortality rate, under-5 (per 1,000 live births)",2016,104.3
-RWA,Rwanda,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,12
-RWA,Rwanda,"Mortality rate, under-5 (per 1,000 live births)",2016,38.5
-SDN,Sudan,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,9.1
-SDN,Sudan,"Mortality rate, under-5 (per 1,000 live births)",2016,65.1
-SEN,Senegal,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,16.2
-SEN,Senegal,"Mortality rate, under-5 (per 1,000 live births)",2016,47.1
-SLE,Sierra Leone,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,20.8
-SLE,Sierra Leone,"Mortality rate, under-5 (per 1,000 live births)",2016,113.5
-SOM,Puntland,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,24.1
-SOM,Puntland,"Mortality rate, under-5 (per 1,000 live births)",2016,132.5
-SOM,Somalia,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,24.1
-SOM,Somalia,"Mortality rate, under-5 (per 1,000 live births)",2016,132.5
-SOM,Somaliland,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,24.1
-SOM,Somaliland,"Mortality rate, under-5 (per 1,000 live births)",2016,132.5
-SSD,South Sudan,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,16.9
-SSD,South Sudan,"Mortality rate, under-5 (per 1,000 live births)",2016,90.7
-STP,Sao Tome and Principe,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,9.4
-STP,Sao Tome and Principe,"Mortality rate, under-5 (per 1,000 live births)",2016,33.8
-SWZ,Swaziland,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,11.4
-SWZ,Swaziland,"Mortality rate, under-5 (per 1,000 live births)",2016,70.4
-TCD,Chad,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,26.4
-TCD,Chad,"Mortality rate, under-5 (per 1,000 live births)",2016,127.3
-TGO,Togo,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,22.5
-TGO,Togo,"Mortality rate, under-5 (per 1,000 live births)",2016,75.7
-TUN,Tunisia,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,3.1
-TUN,Tunisia,"Mortality rate, under-5 (per 1,000 live births)",2016,13.6
-TZA,Tanzania,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,12.2
-TZA,Tanzania,"Mortality rate, under-5 (per 1,000 live births)",2016,56.7
-TZA,Zanzibar,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,12.2
-TZA,Zanzibar,"Mortality rate, under-5 (per 1,000 live births)",2016,56.7
-UGA,Uganda,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,16.1
-UGA,Uganda,"Mortality rate, under-5 (per 1,000 live births)",2016,53
-ZAF,South Africa,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,5.2
-ZAF,South Africa,"Mortality rate, under-5 (per 1,000 live births)",2016,43.3
-ZMB,Zambia,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,13.9
-ZMB,Zambia,"Mortality rate, under-5 (per 1,000 live births)",2016,63.4
-ZWE,Zimbabwe,"Probability of dying at age 5-14 years (per 1,000 children age 5)",2016,15.3
-ZWE,Zimbabwe,"Mortality rate, under-5 (per 1,000 live births)",2016,56.4
+﻿adm0_a3_is,geounit,Mortality Rate,Prob of Dying
+AGO,Angola,82.5,15.4
+BDI,Burundi,71.7,20.2
+BEN,Benin,97.6,22.4
+BFA,Burkina Faso,84.6,25.5
+BWA,Botswana,40.6,7.8
+CAF,Central African Republic,123.6,22.2
+CIV,Ivory Coast,91.8,27.9
+CMR,Cameroon,79.7,29.6
+COD,Democratic Republic of the Congo,94.3,28.2
+COG,Republic of Congo,54.1,11.2
+COM,Comoros,73.3,6.2
+CPV,Cape Verde,21.4,2.4
+DJI,Djibouti,64.2,2
+DZA,Algeria,25.2,4.1
+EGY,Egypt,22.8,4.9
+ERI,Eritrea,44.5,12.5
+ESP,Spain,3.3,0.8
+ETH,Ethiopia,58.4,17.4
+GAB,Gabon,47.4,15.7
+GHA,Ghana,58.8,12.6
+GIN,Guinea,89,22.3
+GMB,Gambia,65.3,12.5
+GNB,Guinea Bissau,88.1,17.6
+GNQ,Equatorial Guinea,90.9,16.8
+KEN,Kenya,49.2,10.6
+LBR,Liberia,67.4,17.3
+LBY,Libya,12.9,4.9
+LSO,Lesotho,93.5,13.8
+MAR,Morocco,27.1,3.4
+MAR,Western Sahara,27.1,3.4
+MDG,Madagascar,46.4,13.4
+MLI,Mali,110.6,23.5
+MOZ,Mozambique,71.3,15.4
+MRT,Mauritania,81.4,9.3
+MWI,Malawi,55.1,13.6
+NAM,Namibia,45.2,10.6
+NER,Niger,91.3,40.3
+NGA,Nigeria,104.3,20.6
+RWA,Rwanda,38.5,12
+SDN,Sudan,65.1,9.1
+SEN,Senegal,47.1,16.2
+SLE,Sierra Leone,113.5,20.8
+SOM,Puntland,132.5,24.1
+SOM,Somalia,132.5,24.1
+SOM,Somaliland,132.5,24.1
+SSD,South Sudan,90.7,16.9
+STP,Sao Tome and Principe,33.8,9.4
+SWZ,Swaziland,70.4,11.4
+TCD,Chad,127.3,26.4
+TGO,Togo,75.7,22.5
+TUN,Tunisia,13.6,3.1
+TZA,Tanzania,56.7,12.2
+TZA,Zanzibar,56.7,12.2
+UGA,Uganda,53,16.1
+ZAF,South Africa,43.3,5.2
+ZMB,Zambia,63.4,13.9
+ZWE,Zimbabwe,56.4,15.3
