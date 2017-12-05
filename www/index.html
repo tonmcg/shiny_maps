@@ -66,7 +66,7 @@
             border-bottom: 8px solid transparent;
             border-left: 8px solid #333;
             right: -8px;
-            top: 10px;
+            top: 65px;
             /* arbitrarily set */
         }
         
@@ -81,7 +81,7 @@
             border-bottom: 8px solid transparent;
             left: -8px;
             border-right: 8px solid #333;
-            top: 10px;
+            top: 65px;
             /* arbitrarily set */
         }
         /* SVG Scaling */
@@ -164,29 +164,29 @@
     <script defer type="text/javascript">
     
     	// default view for map
-        let measure = '2016';
+        let measure = 'mortalityrate';
     
 		const cols = {
-			"2013": {
-				"label": "2013",
-				"title": "2013"
-			},
-			"2014": {
-				"label": "2014",
-				"title": "2014"
-			},
-			"2015": {
-				"label": "2015",
-				"title": "2015"
-			},
-			"2016": {
-				"label": "2016",
-				"title": "2016"
-			},
-			"2017": {
-				"label": "2017",
-				"title": "2017"
-			}			
+            "mortalityrate": {
+                "label": "Mortality Rate",
+                "type": "number",
+                "format": ",.0f",
+                "title": "Mortality rate, under-5 (per 1,000 live births)",
+                "latestyear": "2016",
+                "url": "http://www.childmortality.org/",
+                "source": "childmortality.org",
+                "description": "Estimates Developed by the UN Inter-agency Group for Child Mortality Estimation ( UNICEF, WHO, World Bank, UN DESA Population Division ). Projected data are from the United Nations Population Division's World Population Prospects; and may in some cases not be consistent with data before the current year."
+            },
+            "dyingyoung": {
+                "label": "Probability Dying Young",
+                "type": "percentage",
+                "format": ".1%",
+                "title": "Probability of dying at age 5-14 years (per 1,000 children age 5)",
+                "latestyear": "2016",
+                "url": "http://www.childmortality.org/",
+                "source": "childmortality.org",
+                "description": "Estimates Developed by the UN Inter-agency Group for Child Mortality Estimation ( UNICEF, WHO, World Bank, UN DESA Population Division )"
+            }
 		}
 		
         // spinner loader settings
@@ -262,9 +262,10 @@
             // stop spin.js loader
             spinner.stop();
 
-			results = data.filter(function(d){
-				if(d.Year == measure) countryObj[d.adm0_a3_is] = d;
-				return d.Year == measure;
+			data.forEach(function(d){
+				d.mortalityrate = +d['Mortality Rate'];
+				d.dyingyoung = +d['Prob of Dying'];
+				countryObj[d.adm0_a3_is] = d;
 			});
 		
 	        let centered;
@@ -275,8 +276,8 @@
 	            // counter for missing counties (usually in Alaska)
 	            let countMissing = 0;
 	
-	            let extent = d3.extent(results, function(d) {
-	                return +countryObj[d.adm0_a3_is].Value;
+	            let extent = d3.extent(data, function(d) {
+	                return +countryObj[d.adm0_a3_is][measure];
 	            });
 	
 	            let color = d3.scaleSequential().interpolator(d3.interpolateOranges);
@@ -284,17 +285,17 @@
 	
                 d3legend
                     .labelFormat(function(d) {
-                        // let value;
+                        let value;
 
-                        // if (cols[measure].type == 'percentage') {
-                        //     value = measure == 'countywinrate' ? Math.abs(d/100) : (d / 100);
-                        // }
-                        // else {
-                        //     value = measure == 'countywinrate' ? Math.abs(d) : d;
-                        // }
-                        return d3.format(",.0f")(d);
+                        if (cols[measure].type == 'percentage') {
+                            value = (d / 100);
+                        }
+                        else {
+                            value = d;
+                        }
+                        return d3.format(cols[measure].format)(value);
                     })
-                    .title("Child Mortality Rate")
+                    .title(cols[measure].label)
                     .scale(color);
 
                 // if legend already exists, remove and create again
@@ -313,17 +314,18 @@
 	                .duration(1000)
 	                .style("fill", function(d) {
 	                    let country = countryObj[d.properties.adm0_a3_is];
-	                    if(country == undefined) {
-	                        countMissing++;
-	                        console.log(d.properties.formal_en + " not found. Error #" + countMissing);
-	                        return '#ccc';
-	                    }
-	                    else if (country.Country && country.Value === null) {
+	                    if(country && country[measure] === null) {
 	                        console.log(country.Country + " does not have data");
 	                        return '#ccc';
 	                    }
-	                    else if (country.Country) {
-	                        return color(country.Value);
+	                    else if (country) {
+	                        return color(country[measure]);
+	                        
+	                    }
+	                    else {
+	                    	countMissing++;
+	                    	console.log(d.properties.formal_en + " not found. Error #" + countMissing);
+	                    	return '#ccc';
 	                    }
 	                });
 	
@@ -392,18 +394,33 @@
 	            .attr("d", path);
 	            
 	        renderMap();
+	        renderText();
 	        bindHover();
 	        setResponsiveSVG();
 
             measureSelect.on('change', function(d) {
                 measure = this.value;
-				results = data.filter(function(d){
-					if(d.Year == measure) countryObj[d.adm0_a3_is] = d;
-					return d.Year == measure;
-				});
 				renderMap();
+				renderText();
             });
 	        
+        }
+        
+        // change factor description
+        function renderText() {
+
+            let textHeader = d3.select('#textDescription h3');
+            let textDescription = d3.select('#textDescription p');
+            let textFootnote = d3.select('#source > footnote');
+
+            let title = cols[measure].title;
+            let description = cols[measure].description;
+            let url = cols[measure].url;
+            let source = cols[measure].source;
+
+            textHeader.style("opacity", 0).transition().duration(1000).style("opacity", 1).text(title);
+            textDescription.style("opacity", 0).transition().duration(1000).style("opacity", 1).text(description);
+            textFootnote.html('<em>Source: </em><span><a href="' + url + '" target="_blank">' + source + '</span></a>');
         }
         
         // define mouseover and mouseout events
@@ -412,9 +429,17 @@
             document.body.addEventListener('mousemove', function(e) {
 
                 if (e.target.nodeName == 'path') {
-		            let d = d3.select(e.target).data();
-		            let content = d[0].properties.admin;
-		            
+                    let d = d3.select(e.target).data()[0].properties;
+                    let value = countryObj[d.adm0_a3_is][measure];
+                    let content = '';
+                    if (value === null) {
+                        content = countryObj[d.adm0_a3_is].geounit + ': ' + 'No data';
+                    } else {
+                        content = "<b>" + d.admin + '</b><br>' + "Income Group: " + d.income_grp + '<br>' + 'Economy: ' + d.economy + '<br>' + 'Mortality Rate: ' + countryObj[d.adm0_a3_is]['mortalityrate'] + '<br>' + 'Probability of Dying Young: ' + d3.format('.1%')(countryObj[d.adm0_a3_is]['dyingyoung']/100);
+                    	
+                    }
+                        
+
 		            showDetail(e, content);
                 }
             });
@@ -488,7 +513,7 @@
 
         d3.queue()
             .defer(d3.json, "https://gist.githubusercontent.com/DimsumPanda/88aa1d70cd0c394feeae/raw/192d7eed828268ea91b24c100063992042f86835/africa.topojson")
-            .defer(d3.csv, "https://raw.githubusercontent.com/tonmcg/shiny_maps/master/www/API_SH.DYN.MORT_DS2_en_csv_v2/data.csv")
+            .defer(d3.csv, "https://raw.githubusercontent.com/tonmcg/shiny_maps/master/www/data.csv")
             .await(createMap);
         
 	</script>
