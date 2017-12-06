@@ -116,7 +116,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <div id="title" class="page-header">
-                    <h2>Africa Lambert Conformal Conic <small>Incorporating R, Shiny, and D3.js</small></h2>
+                    <h2>Africa Lambert Conformal Conic TopoJSON<small>Incorporating R, Shiny, and D3.js</small></h2>
                 </div>
             </div>
         </div>
@@ -512,7 +512,7 @@
         }
 
         d3.queue()
-            .defer(d3.json, "https://gist.githubusercontent.com/DimsumPanda/88aa1d70cd0c394feeae/raw/192d7eed828268ea91b24c100063992042f86835/africa.topojson")
+            .defer(d3.json, "https://raw.githubusercontent.com/tonmcg/shiny_maps/master/www/africa.topojson")
             .defer(d3.csv, "https://raw.githubusercontent.com/tonmcg/shiny_maps/master/www/data.csv")
             .await(createMap);
         
